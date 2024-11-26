@@ -202,6 +202,127 @@
         .footer-section a:hover {
             text-decoration: underline;
         }
+
+        /* Additional styles from second document */
+        .hero {
+            background-color: #1a237e;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            background-color: #fff;
+            color: #1a237e;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 1.5rem;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+
+        .how-it-works {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .step {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .step-number {
+            background-color: #1a237e;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-weight: bold;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .safety-tips {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .tips-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .tip-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
     </style>
 </head>
 <body>
@@ -226,9 +347,51 @@
     </nav>
 
     <div class="main-content">
+        <section class="hero">
+            <h2>Exchange Your Tech Items Safely</h2>
+            <p>Join our community of tech enthusiasts and start trading today!</p>
+            <a href="#post" class="hero-btn">Start Trading Now</a>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Secure Trades</h3>
+                <p>All exchanges are protected and monitored for your safety</p>
+            </div>
+            <div class="feature-card">
+                <h3>Easy to Use</h3>
+                <p>Simple and straightforward exchange process</p>
+            </div>
+            <div class="feature-card">
+                <h3>24/7 Support</h3>
+                <p>Our team is always here to help you</p>
+            </div>
+        </section>
+
         <div class="intro">
             <p>At Swap it, we offer a 100% secure and regulated platform where you can exchange products, services, or digital assets quickly, transparently, and reliably. Whether you're looking for something or have something to exchange, we ensure that all transactions are protected. We also offer multiple secure payment methods such as bank transfers, credit cards, and PayPal. With 24/7 support, you can be confident that your exchange experience will be easy and hassle-free.</p>
         </div>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Post Your Item</h3>
+                    <p>List what you have and what you want</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Connect</h3>
+                    <p>Find someone interested in trading</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Exchange</h3>
+                    <p>Complete the trade safely</p>
+                </div>
+            </div>
+        </section>
 
         <div class="search-bar">
             <input type="text" placeholder="Search for exchanges...">
@@ -269,6 +432,35 @@
             </tbody>
         </table>
 
+        <section class="testimonials">
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Great platform for trading tech items. Very secure and easy to use!"</p>
+                <p class="testimonial-author">- Carlos R.</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Found exactly what I was looking for. Smooth exchange process!"</p>
+                <p class="testimonial-author">- Ana M.</p>
+            </div>
+        </section>
+
+        <section class="safety-tips">
+            <h2>Safety Tips for Trading</h2>
+            <div class="tips-list">
+                <div class="tip-card">
+                    <h3>Meet in Safe Places</h3>
+                    <p>Always meet in public, well-lit locations for exchanges</p>
+                </div>
+                <div class="tip-card">
+                    <h3>Verify Items</h3>
+                    <p>Check items thoroughly before completing the exchange</p>
+                </div>
+                <div class="tip-card">
+                    <h3>Keep Records</h3>
+                    <p>Document all communication and agreements</p>
+                </div>
+            </div>
+        </section>
+
         <div class="exchange-form">
             <h2>Post Your Exchange</h2>
             <form>
@@ -289,65 +481,3 @@
 
                 <div class="form-group">
                     <label for="item-wanted">Item You Want:</label>
-                    <input type="text" id="item-wanted" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="condition">Item Condition:</label>
-                    <select id="condition" required>
-                        <option value="">Select condition...</option>
-                        <option value="new">New</option>
-                        <option value="like-new">Like New</option>
-                        <option value="good">Good</option>
-                        <option value="fair">Fair</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="description">Description:</label>
-                    <textarea id="description" required></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="image">Upload Image:</label>
-                    <input type="file" id="image" accept="image/*">
-                </div>
-
-                <button type="submit" class="submit-btn">Post Exchange</button>
-            </form>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About SWAP IT</h3>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#safety">Safety Guidelines</a></li>
-                    <li><a href="#terms">Terms of Service</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="#report">Report an Issue</a></li>
-                    <li><a href="#help">Help Center</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Connect With Us</h3>
-                <ul>
-                    <li><a href="#facebook">Facebook</a></li>
-                    <li><a href="#twitter">Twitter</a></li>
-                    <li><a href="#instagram">Instagram</a></li>
-                    <li><a href="#linkedin">LinkedIn</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
