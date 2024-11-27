@@ -338,146 +338,142 @@
 
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#exchanges">Exchanges</a></li>
-            <li><a href="#post">Post Exchange</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exchanges.html">Exchanges</a></li>
+            <li><a href="post.html">Post Exchange</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWAP IT - Technology Exchange Platform</title>
+    <style>
+        /* Previous CSS styles remain the same */
+        
+        /* Additional styles for tech exchange section */
+        .tech-exchange-info {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .tech-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .tech-category {
+            background-color: #f0f0f0;
+            padding: 1rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .safety-guidelines {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .safety-step {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Previous header and nav remain the same -->
 
     <div class="main-content">
-        <section class="hero">
-            <h2>Exchange Your Tech Items Safely</h2>
-            <p>Join our community of tech enthusiasts and start trading today!</p>
-            <a href="#post" class="hero-btn">Start Trading Now</a>
-        </section>
-
-        <section class="features">
-            <div class="feature-card">
-                <h3>Secure Trades</h3>
-                <p>All exchanges are protected and monitored for your safety</p>
-            </div>
-            <div class="feature-card">
-                <h3>Easy to Use</h3>
-                <p>Simple and straightforward exchange process</p>
-            </div>
-            <div class="feature-card">
-                <h3>24/7 Support</h3>
-                <p>Our team is always here to help you</p>
-            </div>
-        </section>
-
-        <div class="intro">
-            <p>At Swap it, we offer a 100% secure and regulated platform where you can exchange products, services, or digital assets quickly, transparently, and reliably. Whether you're looking for something or have something to exchange, we ensure that all transactions are protected. We also offer multiple secure payment methods such as bank transfers, credit cards, and PayPal. With 24/7 support, you can be confident that your exchange experience will be easy and hassle-free.</p>
-        </div>
-
-        <section class="how-it-works">
-            <h2>How It Works</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Post Your Item</h3>
-                    <p>List what you have and what you want</p>
+        <section class="tech-exchange-info">
+            <h2>How Technology Exchange Works</h2>
+            <p>SWAP IT is a secure platform for exchanging technological items. Whether you want to trade, upgrade, or find a new home for your tech, we make it simple and safe.</p>
+            
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3>Smartphones</h3>
+                    <p>Trade your old phones, get newer models</p>
                 </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Connect</h3>
-                    <p>Find someone interested in trading</p>
+                <div class="tech-category">
+                    <h3>Laptops</h3>
+                    <p>Exchange computing devices safely</p>
                 </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Exchange</h3>
-                    <p>Complete the trade safely</p>
+                <div class="tech-category">
+                    <h3>Accessories</h3>
+                    <p>Swap chargers, cases, and more</p>
+                </div>
+                <div class="tech-category">
+                    <h3>Gaming Gear</h3>
+                    <p>Trade consoles, controllers, and games</p>
                 </div>
             </div>
         </section>
 
-        <div class="search-bar">
-            <input type="text" placeholder="Search for exchanges...">
-        </div>
-
-        <table class="exchanges-table">
-            <thead>
-                <tr>
-                    <th>Users</th>
-                    <th>Item Image</th>
-                    <th>Exchanges</th>
-                    <th>Arrived well</th>
-                    <th>Note to the platform</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Jesus Gonzalez</td>
-                    <td><img src="/api/placeholder/100/100" alt="Nintendo Switch" class="item-image"></td>
-                    <td>A nintendo switch for a old phone and 3000 pesos.</td>
-                    <td>In perfect condition</td>
-                    <td class="rating">★★★★★</td>
-                </tr>
-                <tr>
-                    <td>Daniel Lopez</td>
-                    <td><img src="/api/placeholder/100/100" alt="Xbox" class="item-image"></td>
-                    <td>A xbox for a laptop</td>
-                    <td>In good condition</td>
-                    <td class="rating">★★★★</td>
-                </tr>
-                <tr>
-                    <td>Mario Valenzuela</td>
-                    <td><img src="/api/placeholder/100/100" alt="Playstation" class="item-image"></td>
-                    <td>A playstation for a xbox with 3 games</td>
-                    <td>In excellent condition</td>
-                    <td class="rating">★★★★★</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <section class="testimonials">
-            <div class="testimonial-card">
-                <p class="testimonial-text">"Great platform for trading tech items. Very secure and easy to use!"</p>
-                <p class="testimonial-author">- Carlos R.</p>
+        <section class="safety-guidelines">
+            <h2>Safe Exchange Guidelines</h2>
+            <div class="safety-step">
+                <h3>1. Verify User Profiles</h3>
+                <p>Always check the profile of the person you're exchanging with. Look for verified users with good ratings.</p>
             </div>
-            <div class="testimonial-card">
-                <p class="testimonial-text">"Found exactly what I was looking for. Smooth exchange process!"</p>
-                <p class="testimonial-author">- Ana M.</p>
+            <div class="safety-step">
+                <h3>2. Public Meeting Points</h3>
+                <p>Meet in public places like coffee shops or technology stores during daylight hours. Never exchange at private residences.</p>
+            </div>
+            <div class="safety-step">
+                <h3>3. Inspect Before Exchanging</h3>
+                <p>Always thoroughly test and inspect the technological item before completing the exchange. Verify functionality and condition.</p>
+            </div>
+            <div class="safety-step">
+                <h3>4. Use Platform Protection</h3>
+                <p>All exchanges are recorded and protected by SWAP IT. We mediate disputes and ensure fair transactions.</p>
             </div>
         </section>
 
-        <section class="safety-tips">
-            <h2>Safety Tips for Trading</h2>
-            <div class="tips-list">
-                <div class="tip-card">
-                    <h3>Meet in Safe Places</h3>
-                    <p>Always meet in public, well-lit locations for exchanges</p>
-                </div>
-                <div class="tip-card">
-                    <h3>Verify Items</h3>
-                    <p>Check items thoroughly before completing the exchange</p>
-                </div>
-                <div class="tip-card">
-                    <h3>Keep Records</h3>
-                    <p>Document all communication and agreements</p>
-                </div>
-            </div>
+        <section class="example-exchanges">
+            <h2>Exchange Examples</h2>
+            <table class="exchanges-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Condition</th>
+                        <th>Exchange Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>iPhone 11</td>
+                        <td>Very Good</td>
+                        <td>Direct Trade for Android Phone</td>
+                    </tr>
+                    <tr>
+                        <td>Gaming Laptop</td>
+                        <td>Excellent</td>
+                        <td>Trade + Cash Difference</td>
+                    </tr>
+                    <tr>
+                        <td>Nintendo Switch</td>
+                        <td>Good</td>
+                        <td>Exchange for PS4</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
+    </div>
 
-        <div class="exchange-form">
-            <h2>Post Your Exchange</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" required>
-                </div>
+    <!-- Previous footer remains the same -->
+</body>
+</html>
+    
 
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="item-offer">Item You're Offering:</label>
-                    <input type="text" id="item-offer" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="item-wanted">Item You Want:</label>
