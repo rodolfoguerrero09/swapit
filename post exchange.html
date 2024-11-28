@@ -345,139 +345,192 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWAP IT - Post Exchange</title>
+    <style>
+        /* Previous CSS remains the same */
+        .post-exchange-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .rating-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .rating-section .star {
+            font-size: 2rem;
+            color: #ddd;
+            cursor: pointer;
+            margin: 0 0.25rem;
+            transition: color 0.2s;
+        }
+
+        .rating-section .star.active {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SWAP IT</h1>
+        <p>"Swap, save and discover."</p>
+        <p>100% Mexican and secure trading site.</p>
+    </header>
+
+    <div class="creators">
+        <p>Creators: Santiago Rosales, Rodolfo Guerrero, Maximiliano Ibarra, Diego Beltran y Arturo Arredondo.</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="exchanges.html">Exchanges</a></li>
+            <li><a href="post-exchange.html">Post Exchange</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <div class="main-content">
-        <section class="hero">
-            <h2>Exchange Your Tech Items Safely</h2>
-            <p>Join our community of tech enthusiasts and start trading today!</p>
-            <a href="#post" class="hero-btn">Start Trading Now</a>
-        </section>
-
-        <section class="features">
-            <div class="feature-card">
-                <h3>Secure Trades</h3>
-                <p>All exchanges are protected and monitored for your safety</p>
-            </div>
-            <div class="feature-card">
-                <h3>Easy to Use</h3>
-                <p>Simple and straightforward exchange process</p>
-            </div>
-            <div class="feature-card">
-                <h3>24/7 Support</h3>
-                <p>Our team is always here to help you</p>
-            </div>
-        </section>
-
-        <div class="intro">
-            <p>At Swap it, we offer a 100% secure and regulated platform where you can exchange products, services, or digital assets quickly, transparently, and reliably. Whether you're looking for something or have something to exchange, we ensure that all transactions are protected. We also offer multiple secure payment methods such as bank transfers, credit cards, and PayPal. With 24/7 support, you can be confident that your exchange experience will be easy and hassle-free.</p>
-        </div>
-
-        <section class="how-it-works">
-            <h2>How It Works</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Post Your Item</h3>
-                    <p>List what you have and what you want</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Connect</h3>
-                    <p>Find someone interested in trading</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Exchange</h3>
-                    <p>Complete the trade safely</p>
-                </div>
-            </div>
-        </section>
-
-        <div class="search-bar">
-            <input type="text" placeholder="Search for exchanges...">
-        </div>
-
-        <table class="exchanges-table">
-            <thead>
-                <tr>
-                    <th>Users</th>
-                    <th>Item Image</th>
-                    <th>Exchanges</th>
-                    <th>Arrived well</th>
-                    <th>Note to the platform</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Jesus Gonzalez</td>
-                    <td><img src="/api/placeholder/100/100" alt="Nintendo Switch" class="item-image"></td>
-                    <td>A nintendo switch for a old phone and 3000 pesos.</td>
-                    <td>In perfect condition</td>
-                    <td class="rating">★★★★★</td>
-                </tr>
-                <tr>
-                    <td>Daniel Lopez</td>
-                    <td><img src="/api/placeholder/100/100" alt="Xbox" class="item-image"></td>
-                    <td>A xbox for a laptop</td>
-                    <td>In good condition</td>
-                    <td class="rating">★★★★</td>
-                </tr>
-                <tr>
-                    <td>Mario Valenzuela</td>
-                    <td><img src="/api/placeholder/100/100" alt="Playstation" class="item-image"></td>
-                    <td>A playstation for a xbox with 3 games</td>
-                    <td>In excellent condition</td>
-                    <td class="rating">★★★★★</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <section class="testimonials">
-            <div class="testimonial-card">
-                <p class="testimonial-text">"Great platform for trading tech items. Very secure and easy to use!"</p>
-                <p class="testimonial-author">- Carlos R.</p>
-            </div>
-            <div class="testimonial-card">
-                <p class="testimonial-text">"Found exactly what I was looking for. Smooth exchange process!"</p>
-                <p class="testimonial-author">- Ana M.</p>
-            </div>
-        </section>
-
-        <section class="safety-tips">
-            <h2>Safety Tips for Trading</h2>
-            <div class="tips-list">
-                <div class="tip-card">
-                    <h3>Meet in Safe Places</h3>
-                    <p>Always meet in public, well-lit locations for exchanges</p>
-                </div>
-                <div class="tip-card">
-                    <h3>Verify Items</h3>
-                    <p>Check items thoroughly before completing the exchange</p>
-                </div>
-                <div class="tip-card">
-                    <h3>Keep Records</h3>
-                    <p>Document all communication and agreements</p>
-                </div>
-            </div>
-        </section>
-
-        <div class="exchange-form">
-            <h2>Post Your Exchange</h2>
+        <div class="post-exchange-form">
+            <h2>Share Your Technology Exchange Experience</h2>
             <form>
                 <div class="form-group">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" required>
+                    <label for="exchange-partner">Exchange Partner's Username</label>
+                    <input type="text" id="exchange-partner" name="exchange-partner" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required>
+                    <label>Rate Your Exchange Experience</label>
+                    <div class="rating-section">
+                        <span class="star" data-rating="1">★</span>
+                        <span class="star" data-rating="2">★</span>
+                        <span class="star" data-rating="3">★</span>
+                        <span class="star" data-rating="4">★</span>
+                        <span class="star" data-rating="5">★</span>
+                    </div>
+                    <input type="hidden" id="rating" name="rating" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="item-offer">Item You're Offering:</label>
-                    <input type="text" id="item-offer" required>
+                    <label for="exchanged-item">Exchanged Technology Item</label>
+                    <input type="text" id="exchanged-item" name="exchanged-item" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="item-wanted">Item You Want:</label>
+                    <label for="item-condition">Item Condition After Exchange</label>
+                    <select id="item-condition" name="item-condition" required>
+                        <option value="">Select Condition</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience-details">Experience Details</label>
+                    <textarea id="experience-details" name="experience-details" placeholder="Share details about your exchange experience, communication, and item condition" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="would-exchange-again">Would You Exchange Again?</label>
+                    <select id="would-exchange-again" name="would-exchange-again" required>
+                        <option value="">Select Option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="maybe">Maybe</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Exchange Feedback</button>
+            </form>
+        </div>
+
+        <div class="safety-tips">
+            <h3>Feedback Guidelines</h3>
+            <div class="tips-list">
+                <div class="tip-card">
+                    <h4>Be Honest</h4>
+                    <p>Provide constructive and truthful feedback.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Be Respectful</h4>
+                    <p>Focus on the exchange experience, not personal attacks.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Be Specific</h4>
+                    <p>Detailed feedback helps improve future exchanges.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Protect Privacy</h4>
+                    <p>Avoid sharing personal contact information.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple star rating interaction
+        const stars = document.querySelectorAll('.star');
+        const ratingInput = document.getElementById('rating');
+
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                const rating = star.getAttribute('data-rating');
+                
+                stars.forEach(s => {
+                    if (s.getAttribute('data-rating') <= rating) {
+                        s.classList.add('active');
+                    } else {
+                        s.classList.remove('active');
+                    }
+                });
+
+                ratingInput.value = rating;
+            });
+        });
+    </script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="exchanges.html">Exchanges</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="#">Exchange Guidelines</a></li>
+                    <li><a href="#">Feedback Policy</a></li>
+                    <li><a href="#">Community Standards</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: support@swapit.mx</li>
+                    <li>Phone: +52 55 1234 5678</li>
+                    <li>Address: Mexico City, CDMX</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+    
+
+
