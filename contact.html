@@ -345,139 +345,212 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SWAP IT</title>
+    <style>
+        /* Existing styles from the previous document */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <div class="main-content">
-        <section class="hero">
-            <h2>Exchange Your Tech Items Safely</h2>
-            <p>Join our community of tech enthusiasts and start trading today!</p>
-            <a href="#post" class="hero-btn">Start Trading Now</a>
-        </section>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f2f5;
+            color: #333;
+        }
 
-        <section class="features">
-            <div class="feature-card">
-                <h3>Secure Trades</h3>
-                <p>All exchanges are protected and monitored for your safety</p>
-            </div>
-            <div class="feature-card">
-                <h3>Easy to Use</h3>
-                <p>Simple and straightforward exchange process</p>
-            </div>
-            <div class="feature-card">
-                <h3>24/7 Support</h3>
-                <p>Our team is always here to help you</p>
-            </div>
-        </section>
+        header {
+            background-color: #1a237e;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
 
-        <div class="intro">
-            <p>At Swap it, we offer a 100% secure and regulated platform where you can exchange products, services, or digital assets quickly, transparently, and reliably. Whether you're looking for something or have something to exchange, we ensure that all transactions are protected. We also offer multiple secure payment methods such as bank transfers, credit cards, and PayPal. With 24/7 support, you can be confident that your exchange experience will be easy and hassle-free.</p>
+        nav {
+            background-color: #303f9f;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            color: #1a237e;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+
+        .submit-btn {
+            background-color: #1a237e;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .submit-btn:hover {
+            background-color: #303f9f;
+        }
+
+        footer {
+            background-color: #1a237e;
+            color: white;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SWAP IT</h1>
+        <p>"Swap, save and discover."</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="exchanges.html">Exchanges</a></li>
+            <li><a href="post exchange.html">Post Exchange</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-container">
+        <form class="contact-form">
+            <h2>Contact Us</h2>
+            
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                    <!-- Add more countries as needed -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments" placeholder="Tell us about your technology exchange interests..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Contact Form</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About SWAP IT</h3>
+                <p>100% Mexican and secure trading site for technological items.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="exchanges.html">Exchanges</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: contact@swapit.com</p>
+                <p>Phone: +52 (55) 1234 5678</p>
+            </div>
         </div>
-
-        <section class="how-it-works">
-            <h2>How It Works</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Post Your Item</h3>
-                    <p>List what you have and what you want</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Connect</h3>
-                    <p>Find someone interested in trading</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Exchange</h3>
-                    <p>Complete the trade safely</p>
-                </div>
-            </div>
-        </section>
-
-        <div class="search-bar">
-            <input type="text" placeholder="Search for exchanges...">
-        </div>
-
-        <table class="exchanges-table">
-            <thead>
-                <tr>
-                    <th>Users</th>
-                    <th>Item Image</th>
-                    <th>Exchanges</th>
-                    <th>Arrived well</th>
-                    <th>Note to the platform</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Jesus Gonzalez</td>
-                    <td><img src="/api/placeholder/100/100" alt="Nintendo Switch" class="item-image"></td>
-                    <td>A nintendo switch for a old phone and 3000 pesos.</td>
-                    <td>In perfect condition</td>
-                    <td class="rating">★★★★★</td>
-                </tr>
-                <tr>
-                    <td>Daniel Lopez</td>
-                    <td><img src="/api/placeholder/100/100" alt="Xbox" class="item-image"></td>
-                    <td>A xbox for a laptop</td>
-                    <td>In good condition</td>
-                    <td class="rating">★★★★</td>
-                </tr>
-                <tr>
-                    <td>Mario Valenzuela</td>
-                    <td><img src="/api/placeholder/100/100" alt="Playstation" class="item-image"></td>
-                    <td>A playstation for a xbox with 3 games</td>
-                    <td>In excellent condition</td>
-                    <td class="rating">★★★★★</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <section class="testimonials">
-            <div class="testimonial-card">
-                <p class="testimonial-text">"Great platform for trading tech items. Very secure and easy to use!"</p>
-                <p class="testimonial-author">- Carlos R.</p>
-            </div>
-            <div class="testimonial-card">
-                <p class="testimonial-text">"Found exactly what I was looking for. Smooth exchange process!"</p>
-                <p class="testimonial-author">- Ana M.</p>
-            </div>
-        </section>
-
-        <section class="safety-tips">
-            <h2>Safety Tips for Trading</h2>
-            <div class="tips-list">
-                <div class="tip-card">
-                    <h3>Meet in Safe Places</h3>
-                    <p>Always meet in public, well-lit locations for exchanges</p>
-                </div>
-                <div class="tip-card">
-                    <h3>Verify Items</h3>
-                    <p>Check items thoroughly before completing the exchange</p>
-                </div>
-                <div class="tip-card">
-                    <h3>Keep Records</h3>
-                    <p>Document all communication and agreements</p>
-                </div>
-            </div>
-        </section>
-
-        <div class="exchange-form">
-            <h2>Post Your Exchange</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="item-offer">Item You're Offering:</label>
-                    <input type="text" id="item-offer" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="item-wanted">Item You Want:</label>
+    </footer>
+</body>
+</html>
